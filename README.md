@@ -1,5 +1,4 @@
-# Image_feature_extraction- to extract local image features such as contrast, similarity or homogeneuos between the pair of pixels
-This code is about how to extract hand engineered features from a PV cell image
+# Hnad engineered Image_feature_extraction- to extract local image features such as contrast, similarity or homogeneuos between the pair of pixels in PV cell images
 ############################# the code is as below
 from skimage.feature import greycomatrix, greycoprops  # Import functions for GLCM computation from scikit-image
 # Function to convert float images to uint8
