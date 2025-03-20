@@ -12,8 +12,8 @@ def compute_glcm_features(image, distances=[1], angles=[0, np.pi/4, np.pi/2], le
     features = {
         'contrast': greycoprops(glcm, 'contrast').ravel(),  # Extract contrast feature from GLCM
         # Additional features can be uncommented and used as needed
-        # 'dissimilarity': greycoprops(glcm, 'dissimilarity').ravel(),
-        # 'homogeneity': greycoprops(glcm, 'homogeneity').ravel(),
+        'dissimilarity': greycoprops(glcm, 'dissimilarity').ravel(),
+        'homogeneity': greycoprops(glcm, 'homogeneity').ravel(),
         # 'energy': greycoprops(glcm, 'energy').ravel(),
         # 'correlation': greycoprops(glcm, 'correlation').ravel(),
         # 'ASM': greycoprops(glcm, 'ASM').ravel()
